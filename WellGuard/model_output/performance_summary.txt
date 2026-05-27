@@ -1,0 +1,7 @@
+WellGuard Model Training Summary
+Timestamp: 2026-05-25 08:55:19
+========================================
+Best Val Loss: 0.0077
+Best Val Acc: 0.9925
+Total Parameters: 1,476,867
+========================================

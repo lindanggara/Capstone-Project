@@ -1,0 +1,48 @@
+{
+  "model_version": "1.0",
+  "project": "Nuraga CC26-PRU428",
+  "feature_cols": [
+    "age",
+    "sex",
+    "sleep",
+    "stress",
+    "shift",
+    "stress_sleep_ratio",
+    "sleep_deficit",
+    "age_stress",
+    "night_stress",
+    "cum_burden",
+    "sleep_eff",
+    "age_group_ord"
+  ],
+  "n_classes": 3,
+  "class_labels": {
+    "0": "Rendah",
+    "1": "Sedang",
+    "2": "Tinggi"
+  },
+  "plr_emb_dim": 16,
+  "plr_sigma": 1.0,
+  "hidden_dims": [
+    512,
+    512,
+    256,
+    128
+  ],
+  "dropout_rates": [
+    0.3,
+    0.3,
+    0.2,
+    0.1
+  ],
+  "activation": "SELU",
+  "scaler": "RobustScaler",
+  "mixup_alpha": 0.2,
+  "ema_decay": 0.999,
+  "imwa_episodes": 3,
+  "loss_fn": "FocalLoss + LabelSmoothing",
+  "val_loss_best": 0.007669113571786023,
+  "val_acc_best": 0.9925490196078431,
+  "n_params": 1476867,
+  "data_source": "wellguard.csv (output EDA notebook)"
+}
